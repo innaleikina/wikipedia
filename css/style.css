@@ -1,0 +1,133 @@
+html {
+  font-size: 14px;
+  background-color: rgba(165, 189, 226, 0.9);
+}
+
+body {
+  font-family: "Helvetica";
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.all {
+  align-items: center;
+}
+
+.title {
+  margin-top: 3rem;
+  font-weight: lighter;
+  letter-spacing: 0.7rem;
+  margin-bottom: 2rem;
+  color: gray;
+  text-shadow: 1px 2px 1px white;
+  border-bottom: 1px gray solid;
+  padding: 0rem 2rem 1.5rem 2rem;
+}
+
+.search-bar {
+  width: 8rem;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin-top: 1rem;
+  flex-direction: row;
+  height: 1rem;
+}
+
+input[type="text"]:focus {
+  width: 50%;
+  outline: 0;
+}
+
+.random-button {
+  width: 10rem;
+  height: 4rem;
+  border: 2px white solid;
+  background-color: rgba(190, 210, 236, 0.9);
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  font-weight: semi-bold;
+  color: white;
+  transition: all 0.2s ease;
+  padding: 0rem 1rem 0.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.random-button-search {
+  width: 6rem;
+  height: 2rem;
+  border: 2px white solid;
+  background-color: rgba(190, 210, 236, 0.9);
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  font-weight: semi-bold;
+  color: white;
+  transition: all 0.2s ease;
+  padding: 0rem 1rem 0.5rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.8rem;
+  padding-top: .2rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  border: 2.3px white solid;
+  width: 11rem;
+}
+
+button:active {
+  box-shadow: none;
+  border: none;
+  font-weight: bold;
+}
+
+.after-search {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.articles a {
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #593602;
+  text-decoration: none;
+  margin-top: 5rem;
+}
+
+.article-title {
+  margin-top: 3rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+.content {
+  color: black;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+}
+
+.results {
+  width: 24rem;
+  margin-top: 1.4rem;
+  height: 100%;
+}
+
+.articles a:hover {
+  color: white;
+}
