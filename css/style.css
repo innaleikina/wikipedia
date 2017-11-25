@@ -42,7 +42,16 @@ input[type="text"]:focus {
   outline: 0;
 }
 
+.buttons-desktop {
+  flex-direction:row;
+}
+
+.search{
+  margin-right:1rem;
+}
+
 .random-button {
+  margin-left:1rem;
   width: 10rem;
   height: 4rem;
   border: 2px white solid;
@@ -57,6 +66,8 @@ input[type="text"]:focus {
   padding: 0rem 1rem 0.5rem 1rem;
   margin-top: 3rem;
 }
+
+
 
 .random-button-search {
   width: 6rem;
@@ -81,7 +92,7 @@ button:focus {
   outline: 0;
 }
 
-button:hover {
+.random-button:hover {
   border: 2.3px white solid;
   width: 11rem;
 }

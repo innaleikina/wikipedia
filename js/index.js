@@ -4,15 +4,18 @@ $("document").ready(function() {
   $(".search-bar").keyup(function(event) {
    // $(".articles").append("")
     //Uses the enter key to update the search word(s)//
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 || $(".search").on("click")) {
       $(".search-bar").click();
       //serach word(s)//
       var search = $(".search-bar")
         .val()
         .replace(/\s+/g, "%20");
+
+
       //Moves the random quote button up and to the side
       $(".random-button").hide();
       $(".random-button-search").show();
+
 
       var url =
         "https://www.wikipedia.org//w/api.php?action=query&format=json&list=search&srsearch=" +
@@ -35,7 +38,7 @@ $("document").ready(function() {
               "</p>"
           );
         }
-    
+
       });
       //Empties the results so the new search can be displayed
      $(".articles").empty();
