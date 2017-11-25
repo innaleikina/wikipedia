@@ -139,6 +139,12 @@ button:active {
   height: 100%;
 }
 
+@media only screen and (max-width:400px){
+  .results{
+  width:18rem;
+}
+}
+
 .articles a:hover {
   color: white;
 }
