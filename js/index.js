@@ -3,7 +3,7 @@ $(".random-button-search").hide();
 $("document").ready(function() {
   $(".search-bar").keyup(function(event) {
    // $(".articles").append("")
-    //Uses the enter key to update the search word(s)//
+    //Uses the enter key to update the search word(s) and generate results as the user types//
     if (event.keyCode === 13 || $(".search").on("click")) {
       $(".search-bar").click();
       //serach word(s)//
