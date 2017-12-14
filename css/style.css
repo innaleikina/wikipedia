@@ -29,12 +29,16 @@ body {
 }
 
 .search-bar {
-  width: 5rem;
+  width: 8rem;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   margin-top: 1rem;
   flex-direction: row;
   height: 1rem;
+}
+
+.search-bar:active{
+  width:10rem;
 }
 
 input[type="text"]:focus {
@@ -105,7 +109,7 @@ button:active {
 
 .after-search {
   flex-direction: row;
-  width: 100%;
+  width: 60%;
   justify-content: center;
 }
 
