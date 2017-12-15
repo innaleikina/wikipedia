@@ -4,7 +4,7 @@ $("document").ready(function() {
   $(".search-bar").keyup(function(event) {
    // $(".articles").append("")
     //Uses the enter key to update the search word(s) and generate results as the user types//
-    if (event.keyCode === 13 || $(".search").on("click")) {
+    if (event.keyCode === 13) {
       $(".search-bar").click();
       //serach word(s)//
       var search = $(".search-bar")
